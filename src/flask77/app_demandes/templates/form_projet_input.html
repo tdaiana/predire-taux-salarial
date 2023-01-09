@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+<h1>Saisie des informations du projet</h1>
+<form action="" method="post" novalidate>
+  {{ form.hidden_tag() }}
+  <p>
+    {{ form.profession.label }}<br />
+    {{ form.profession(size=1) }}
+  </p>
+  <p>
+    {{ form.groupe.label }}<br />
+    {{ form.groupe(size=1) }}
+  </p>
+  <p>
+    {{ form.genre.label }}<br />
+    {% for subfield in form.genre %}
+      {{ subfield }}
+      {{ subfield.label }}
+    {% endfor %}
+  </p>
+  <p>
+    {{ form.type_emploi.label }}<br />
+    {{ form.type_emploi(size=1) }}
+  </p>
+  <p>
+    {{ form.region.label }}<br />
+    {{ form.region(size=1) }}
+  </p>
+  <hr>
+  <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}
