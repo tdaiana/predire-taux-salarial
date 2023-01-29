@@ -1,0 +1,102 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.1.3
+mlflow_version: 2.1.1
+model_uuid: 75a135036840452c83af8e7a561f75c7
+run_id: fff7e528b73441e8b00261e5faf05cad
+signature:
+  inputs: '[{"name": "Annee", "type": "long"}, {"name": "Genre de travail_Employ\u00e9s
+    \u00e0 temps plein", "type": "integer"}, {"name": "Genre de travail_Ensemble des
+    employ\u00e9s \u00e0 temps plein et \u00e0 temps partiel", "type": "integer"},
+    {"name": "Sexe_Hommes", "type": "integer"}, {"name": "Regions_Colombie-Britannique",
+    "type": "integer"}, {"name": "Regions_Manitoba", "type": "integer"}, {"name":
+    "Regions_Nouveau-Brunswick", "type": "integer"}, {"name": "Regions_Nouvelle-\u00c9cosse",
+    "type": "integer"}, {"name": "Regions_Ontario", "type": "integer"}, {"name": "Regions_Qu\u00e9bec",
+    "type": "integer"}, {"name": "Regions_Saskatchewan", "type": "integer"}, {"name":
+    "Regions_Terre-Neuve-et-Labrador", "type": "integer"}, {"name": "Regions_\u00cele-du-Prince-\u00c9douard",
+    "type": "integer"}, {"name": "CNP_Arts, culture, sports et loisirs [5]", "type":
+    "integer"}, {"name": "CNP_Cadres interm\u00e9diaires dans le commerce de d\u00e9tail,
+    de gros et des services \u00e0 la client\u00e8le [06]", "type": "integer"}, {"name":
+    "CNP_Cadres interm\u00e9diaires des m\u00e9tiers, des transports, de la production
+    et des services d''utilit\u00e9 publique [07-09]", "type": "integer"}, {"name":
+    "CNP_Cadres interm\u00e9diaires sp\u00e9cialis\u00e9s/cadres interm\u00e9diaires
+    sp\u00e9cialis\u00e9es [01-05]", "type": "integer"}, {"name": "CNP_Cadres sup\u00e9rieurs/cadres
+    sup\u00e9rieures [00]", "type": "integer"}, {"name": "CNP_Dispensateurs/dispensatrices
+    de soins et personnel de soutien en enseignement, en droit et en protection publique
+    [44]", "type": "integer"}, {"name": "CNP_Enseignement, droit et services sociaux,
+    communautaires et gouvernementaux [4]", "type": "integer"}, {"name": "CNP_Fabrication
+    et services d''utilit\u00e9 publique [9]", "type": "integer"}, {"name": "CNP_Gestion
+    [0]", "type": "integer"}, {"name": "CNP_Manoeuvres dans la transformation, la
+    fabrication et les services d''utilit\u00e9 publique [96]", "type": "integer"},
+    {"name": "CNP_Manoeuvres \u00e0 la r\u00e9colte, en am\u00e9nagement paysager
+    et en ressources naturelles [86]", "type": "integer"}, {"name": "CNP_Monteurs/monteuses
+    dans la fabrication [95]", "type": "integer"}, {"name": "CNP_M\u00e9tiers, transport,
+    machinerie et domaines apparent\u00e9s [7]", "type": "integer"}, {"name": "CNP_Op\u00e9rateurs/op\u00e9ratrices
+    de machinerie reli\u00e9e \u00e0 la transformation et \u00e0 la fabrication et
+    autre personnel assimil\u00e9 [94]", "type": "integer"}, {"name": "CNP_Personnel
+    d''installation, de r\u00e9paration et d''entretien et manutentionnaires [74]",
+    "type": "integer"}, {"name": "CNP_Personnel de coordination de la distribution,
+    du suivi et des horaires [15]", "type": "integer"}, {"name": "CNP_Personnel de
+    soutien de bureau [14]", "type": "integer"}, {"name": "CNP_Personnel de soutien
+    des m\u00e9tiers, manoeuvres et aides d''entreprise en construction et autre personnel
+    assimil\u00e9 [76]", "type": "integer"}, {"name": "CNP_Personnel de soutien des
+    services de sant\u00e9 [34]", "type": "integer"}, {"name": "CNP_Personnel de soutien
+    des ventes [66]", "type": "integer"}, {"name": "CNP_Personnel de soutien en service
+    et autre personnel de service, n.c.a. [67]", "type": "integer"}, {"name": "CNP_Personnel
+    de supervision dans la transformation, la fabrication et les services d''utilit\u00e9
+    publique et op\u00e9rateurs/op\u00e9ratrices de poste central de contr\u00f4le
+    [92]", "type": "integer"}, {"name": "CNP_Personnel de supervision des ventes au
+    d\u00e9tail et personnel des ventes sp\u00e9cialis\u00e9es [62]", "type": "integer"},
+    {"name": "CNP_Personnel de supervision du travail administratif et financier et
+    personnel administratif [12]", "type": "integer"}, {"name": "CNP_Personnel de
+    supervision en services et personnel de services sp\u00e9cialis\u00e9s [63]",
+    "type": "integer"}, {"name": "CNP_Personnel des m\u00e9tiers d''entretien et d''op\u00e9ration
+    d''\u00e9quipement [73]", "type": "integer"}, {"name": "CNP_Personnel des m\u00e9tiers
+    de l''\u00e9lectricit\u00e9, de la construction et des industries [72]", "type":
+    "integer"}, {"name": "CNP_Personnel des services de protection public de premi\u00e8re
+    ligne [43]", "type": "integer"}, {"name": "CNP_Personnel en finance, assurance
+    et personnel assimil\u00e9 en administration des affaires [13]", "type": "integer"},
+    {"name": "CNP_Personnel en op\u00e9ration d''\u00e9quipement de transport et de
+    machinerie lourde et autre personnel assimil\u00e9 \u00e0 l''entretien [75]",
+    "type": "integer"}, {"name": "CNP_Personnel en ressources naturelles, en agriculture
+    et en production connexe [84]", "type": "integer"}, {"name": "CNP_Personnel paraprofessionnel
+    des services juridiques, sociaux, communautaires et de l''enseignement [42]",
+    "type": "integer"}, {"name": "CNP_Personnel professionnel des arts et de la culture
+    [51]", "type": "integer"}, {"name": "CNP_Personnel professionnel des sciences
+    naturelles et appliqu\u00e9es [21]", "type": "integer"}, {"name": "CNP_Personnel
+    professionnel des soins de sant\u00e9 (sauf soins infirmiers) [31]", "type": "integer"},
+    {"name": "CNP_Personnel professionnel du droit et des services gouvernementaux,
+    sociaux et communautaires [41]", "type": "integer"}, {"name": "CNP_Personnel professionnel
+    en gestion des affaires et en finance [11]", "type": "integer"}, {"name": "CNP_Personnel
+    professionnel en services d''enseignement [40]", "type": "integer"}, {"name":
+    "CNP_Personnel professionnel en soins infirmiers [30]", "type": "integer"}, {"name":
+    "CNP_Personnel technique assimil\u00e9 aux sciences naturelles et appliqu\u00e9es
+    [22]", "type": "integer"}, {"name": "CNP_Personnel technique des arts, de la culture,
+    des sports et des loisirs [52]", "type": "integer"}, {"name": "CNP_Personnel technique
+    des soins de sant\u00e9 [32]", "type": "integer"}, {"name": "CNP_Repr\u00e9sentants/repr\u00e9sentantes
+    de services et autre personnel de services \u00e0 la client\u00e8le et personnalis\u00e9s
+    [65]", "type": "integer"}, {"name": "CNP_Repr\u00e9sentants/repr\u00e9sentantes
+    des ventes et vendeurs/vendeuses - commerce de gros et de d\u00e9tail [64]", "type":
+    "integer"}, {"name": "CNP_Ressources naturelles, agriculture et production connexe
+    [8]", "type": "integer"}, {"name": "CNP_Sciences naturelles et appliqu\u00e9es
+    et domaines apparent\u00e9s [2]", "type": "integer"}, {"name": "CNP_Secteur de
+    la sant\u00e9 [3]", "type": "integer"}, {"name": "CNP_Superviseurs/superviseures
+    et m\u00e9tiers techniques dans les ressources naturelles, l''agriculture et la
+    production connexe [82]", "type": "integer"}, {"name": "CNP_Total des employ\u00e9s,
+    toutes les professions", "type": "integer"}, {"name": "CNP_Vente et services [6]",
+    "type": "integer"}, {"name": "Groupe d''\u00e2ge_25 \u00e0 54 ans", "type": "integer"},
+    {"name": "Groupe d''\u00e2ge_55 ans et plus", "type": "integer"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-01-17 11:23:56.029654'
